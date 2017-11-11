@@ -1,4 +1,5 @@
 import os
+import sys
 
 import numpy as np
 import requests
@@ -47,7 +48,7 @@ def main(fname=None, fig_ax=None):
         plot_efficiency_gap(terms, gaps, ax, office)
 
     ax.set_xlabel('Decade')
-    ax.set_ylabel('Efficiency gap, +ve benefits D\n(difference in average % vote wasted)')
+    ax.set_ylabel('Efficiency gap, +ve benefits D\n(partisan difference in wasted vote as % of total vote)')
     max_gap = max_gap * 100 + 5
     ax.set_ylim(-max_gap, max_gap)
 
@@ -65,5 +66,6 @@ def main(fname=None, fig_ax=None):
 
 
 if __name__ == '__main__':
-    main(os.path.join(PROJECT_ROOT, 'figure.svg'))
+    fname = sys.argv[1] if len(sys.argv) > 1 else os.path.join(PROJECT_ROOT, 'figure.png')
+    main(fname)
     plt.show()
