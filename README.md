@@ -38,8 +38,12 @@ confound.
 
 - Python >=3.6
 
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
-    python3 -m va_efficiency
+```bash
+python3 -m va_efficiency
+```
