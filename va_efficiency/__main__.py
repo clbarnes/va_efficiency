@@ -59,6 +59,7 @@ def main(fname=None, fig_ax=None):
 
     ax.legend()
     fig.set_size_inches(12, 8)
+    fig.tight_layout()
     if fname:
         plt.savefig(fname, dpi=600)
 
