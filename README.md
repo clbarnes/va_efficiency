@@ -30,6 +30,12 @@ district map persisted.
 ![Figure](figure.svg "Figure")
 
 
+While historically the district maps have varied in their partisan
+favour, in the last decade the VA and US House district maps have
+heavily favoured the Republican party - they have allowed the conversion
+of votes into seats at a rate nearly 20% higher than the Democrats
+
+
 ## Issues
 
 - At time of writing, the 2017 elections' results are not finalsed. The
@@ -54,5 +60,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-python3 -m va_efficiency
+python3 -m va_efficiency path/to/figure.png
 ```
+
+Path defaults to `figure.png`
