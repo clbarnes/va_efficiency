@@ -21,6 +21,11 @@ elections for a particular office held within the decade for which the
 district map persisted.
 
 
+## Results
+
+![Figure](figure.svg "Figure")
+
+
 ## Issues
 
 - At time of writing, the 2017 elections' results are not finalsed. The
