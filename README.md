@@ -7,7 +7,11 @@ Partisan [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering)
  democracy. The
  [efficiency gap](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2457468)
  metric is one way to measure the extent to which a particular district
- map benefits one party or the other in a bipartisan system.
+ map benefits one party or the other in a bipartisan system: it measures
+ the partisan difference in wasted votes (across the state) as a
+ proportion of total votes cast, where a wasted vote is any vote for a
+ losing candidate, or any votes more than `floor(total_votes / 2 + 1)`
+ for the winning candidate.
 
 This script applies the efficiency gap measure to Virginia's General
 Assembly and US Representative elections over the last 60 years, using
